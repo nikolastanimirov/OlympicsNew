@@ -1,0 +1,50 @@
+.headerNav {
+  color: #282c34 !important;
+}
+.collapse {
+  float: right;
+  max-width: 600px;
+  font-size: 21px;
+}
+nav {
+  height: 80px;
+  background: transparent !important;
+  width: 100%;
+  transition: all ease 0.5s;
+  position: fixed !important;
+}
+
+nav.black {
+  background: #3a539b !important;
+  color: orange !important;
+  transition: all ease 0.5s;
+}
+nav.black ul li a:hover {
+  color: orange !important;
+}
+nav.black a {
+  color: rebeccapurple;
+}
+nav.black .logo {
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    background: rgb(253, 180, 44) !important;
+  }
+  nav.black {
+    transition: none;
+  }
+  .collapse {
+    background: rgb(253, 180, 44) !important;
+    margin-left: -16px;
+    min-width: 110%;
+  }
+  .collapse .nav-item {
+    padding-left: 20px;
+  }
+  .logo {
+    width: 100px;
+
+    margin-top: -35px;
+  }
+}
