@@ -1,0 +1,15 @@
+.crew ul li img {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+}
+.crew {
+  margin: 0 auto;
+}
+.crew ul li {
+  display: inline-block;
+}
+.crew ul {
+  width: 92%;
+  margin: 0 auto;
+}

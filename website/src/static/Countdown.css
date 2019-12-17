@@ -1,0 +1,31 @@
+.countdown {
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+
+.coutdown-title p {
+  font-size: 120px;
+  color: #ff8f26;
+}
+.countdown-mainframe {
+  max-width: 100%;
+  max-height: 350px;
+  font-size: 150px;
+  color: #5b544b;
+  margin: 0 auto;
+}
+.countdown-mainframe li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.Clock-days,
+.Clock-hours,
+.Clock-minutes,
+.Clock-seconds,
+.clock-title {
+  color: #000;
+}
+.clock-title {
+  font-size: 20px;
+}

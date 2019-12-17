@@ -1,0 +1,17 @@
+.sponsors ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.sponsors {
+  width: 100em;
+  height: 350px;
+  align-content: center;
+  text-align: justify;
+  margin: 0 auto;
+}
+.sponsors-title {
+  font-size: 72px;
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+}

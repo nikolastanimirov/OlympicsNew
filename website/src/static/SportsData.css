@@ -1,0 +1,14 @@
+.sports ul li img {
+  width: 500px;
+  height: 350px;
+}
+.sports {
+  margin: 0 auto;
+}
+.sports ul li {
+  display: inline-block;
+}
+.sports ul {
+  width: 92%;
+  margin: 0 auto;
+}
