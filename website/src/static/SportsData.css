@@ -1,14 +1,50 @@
 .sports ul li img {
-  width: 500px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 .sports {
+  border: 1px solid red;
+  width: 90%;
   margin: 0 auto;
 }
 .sports ul li {
   display: inline-block;
+  padding-left: 15px;
 }
 .sports ul {
   width: 92%;
   margin: 0 auto;
+}
+.container1 {
+  position: relative;
+}
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0px;
+  right: 50px;
+  height: 0;
+  transition: 0.2s ease-in;
+  border-width: 0px 0px 300px 300px;
+  overflow: hidden;
+  border-color: transparent transparent #ffb845bb transparent;
+}
+
+.container1:hover .overlay1 {
+  border-style: solid;
+  overflow: visible;
+}
+
+.text1 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+}
+.container1:hover .text1 {
+  visibility: visible;
+  top: 160px;
+  left: -120px;
 }

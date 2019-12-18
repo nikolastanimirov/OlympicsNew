@@ -16,6 +16,7 @@ function SportsData() {
             alt="Dodgeball"
             url="https://www.google.com"
             title="Dodgeball"
+            link="#"
           />
         </li>
         <li>

@@ -4,7 +4,7 @@ import Amizade from "../resources/sponsors/amizade.png";
 import Pirinsko from "../resources/sponsors/pirinsko.png";
 import Detelina from "../resources/sponsors/detelina2018.png";
 
-import "../sources/Sponsors.css";
+import "../static/Sponsors.css";
 function Data() {
   return (
     <div className="sponsors">

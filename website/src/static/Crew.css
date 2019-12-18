@@ -55,3 +55,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.crew-title {
+  font-size: 72px;
+  margin: 30px auto;
+  text-align: center;
+  align-content: center;
+}
