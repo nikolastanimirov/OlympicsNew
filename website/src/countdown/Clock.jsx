@@ -41,26 +41,32 @@ class Clock extends Component {
     return (
       <ul className="countdown-mainframe">
         <li>
-          <div className="Clock-days">{this.leading0(this.state.days)}</div>
-          <div className="clock-title">DAYS</div>
-        </li>
-        <li>
-          <div className="Clock-hours">{this.leading0(this.state.hours)}</div>
-          <div className="clock-title">HOURS</div>
-        </li>
-        <li>
-          {" "}
-          <div className="Clock-minutes">
-            {this.leading0(this.state.minutes)}
+          <div className="block">
+            <div className="Clock-days">{this.leading0(this.state.days)}</div>
+            <div className="clock-title">DAYS</div>
           </div>
-          <div className="clock-title">MINUTES</div>
         </li>
         <li>
-          {" "}
-          <div className="Clock-seconds">
-            {this.leading0(this.state.seconds)}
+          <div className="block">
+            <div className="Clock-hours">{this.leading0(this.state.hours)}</div>
+            <div className="clock-title">HOURS</div>
           </div>
-          <div className="clock-title">SECONDS</div>
+        </li>
+        <li>
+          <div className="block">
+            <div className="Clock-minutes">
+              {this.leading0(this.state.minutes)}
+            </div>
+            <div className="clock-title">MINUTES</div>
+          </div>
+        </li>
+        <li>
+          <div className="block">
+            <div className="Clock-seconds">
+              {this.leading0(this.state.seconds)}
+            </div>
+            <div className="clock-title">SECONDS</div>
+          </div>
         </li>
       </ul>
     );

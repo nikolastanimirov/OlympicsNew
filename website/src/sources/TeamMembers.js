@@ -10,7 +10,12 @@ function Data() {
     <div className="crew">
       <ul>
         <li>
-          <Member img={NikiS} alt="NikiS" url="https://www.google.com" />
+          <Member
+            img={NikiS}
+            alt="NikiS"
+            name="Nikola Stanimirov"
+            title="President"
+          />
         </li>
         <li>
           <Member img={NikiPoh} alt="Pirinsko" url="https://www.google.com" />

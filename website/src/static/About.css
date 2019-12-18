@@ -1,0 +1,19 @@
+.row {
+  border: 1px solid yellow;
+  width: 90% !important;
+  margin: 50px auto;
+}
+
+.row {
+  height: 500px !important;
+}
+.count {
+  margin-top: -30px;
+}
+.sign-up {
+  margin-top: 50px;
+}
+.sign-up li {
+  display: inline-block;
+  padding: 15px;
+}

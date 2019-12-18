@@ -2,6 +2,8 @@ import React from "react";
 import "../static/carousel.css";
 import scrollTo from "./scrollToAnimate";
 import TeamMembers from "./TeamMembers";
+import ArrLeft from "../resources/arrow-left.svg";
+import ArrRight from "../resources/arrow-right.svg";
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
@@ -60,19 +62,23 @@ class Carousel extends React.Component {
     return (
       <div className="slider-container">
         <button
+          type="button"
+          class="btn btn-link"
           className="slider-nav slider-left-nav"
           onClick={this.handleLeftNav}
         >
-          &#60;
+          <img class="nav-arrow" src={ArrLeft} alt="nav-arrow" />
         </button>
         <div className="slider-viewport" ref="sliderViewport">
           {this.renderSlides()}
         </div>
         <button
+          type="button"
+          class="btn btn-link"
           className="slider-nav slider-right-nav"
           onClick={this.handleRightNav}
         >
-          &#62;
+          <img class="nav-arrow" src={ArrRight} alt="nav-arrow" />
         </button>
       </div>
     );

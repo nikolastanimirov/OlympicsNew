@@ -8,13 +8,15 @@ import Sponsors from "./sources/SponsorsData";
 import TeamMember from "./sources/TeamMembers";
 import Carousel from "./sources/Carousel";
 import SportsData from "./sources/SportsData";
+import Main from "./sources/Main";
+import About from "./sources/About";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <img className="backgroud" src={backgrd} alt="background" />
-      <Countdown />
+      <Main />
+      <About />
       <Sponsors />
       <Carousel />
       <SportsData />

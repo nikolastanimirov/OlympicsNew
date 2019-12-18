@@ -33,3 +33,6 @@ a:hover {
 .backgroud {
   width: 100%;
 }
+img {
+  z-index: -999;
+}

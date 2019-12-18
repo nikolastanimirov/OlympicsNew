@@ -3,21 +3,23 @@
 }
 .collapse {
   float: right;
-  max-width: 600px;
+  max-width: 700px;
   font-size: 21px;
+  z-index: 9999 !important;
 }
 nav {
   height: 80px;
   background: transparent !important;
   width: 100%;
-  transition: all ease 0.5s;
+  transition: all ease 1s;
   position: fixed !important;
+  z-index: 9999 !important;
 }
 
 nav.black {
   background: #3a539b !important;
   color: orange !important;
-  transition: all ease 0.5s;
+  transition: all ease 1s;
 }
 nav.black ul li a:hover {
   color: orange !important;

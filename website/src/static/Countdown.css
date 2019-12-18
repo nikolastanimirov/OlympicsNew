@@ -1,31 +1,40 @@
 .countdown {
-  margin: 0 auto;
-  align-content: center;
+  margin-top: 80px;
   text-align: center;
 }
 
 .coutdown-title p {
-  font-size: 120px;
+  font-size: 50px;
   color: #ff8f26;
 }
 .countdown-mainframe {
   max-width: 100%;
   max-height: 350px;
-  font-size: 150px;
+  font-size: 40px;
   color: #5b544b;
   margin: 0 auto;
 }
+.countdown-mainframe li:first-child {
+  margin-left: -30px;
+}
 .countdown-mainframe li {
   display: inline-block;
-  margin: 0 15px;
+  margin-left: 5px;
+  border: 1px solid #ff8f26;
+  background: rgb(40, 34, 108);
+}
+.block {
+  width: 100px;
+  height: 100px;
 }
 .Clock-days,
 .Clock-hours,
 .Clock-minutes,
 .Clock-seconds,
 .clock-title {
-  color: #000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .clock-title {
-  font-size: 20px;
+  font-size: 16px;
 }

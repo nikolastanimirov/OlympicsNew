@@ -2,10 +2,12 @@ import React from "react";
 
 function Member(props) {
   return (
-    <div>
-      <a href={props.url}>
-        <img src={props.img} alt={props.alt} />
-      </a>
+    <div class="container">
+      <img src={props.img} alt={props.alt} />
+      <div class="overlay">
+        <div class="text">{props.name}</div>
+        <span class="title">{props.title}</span>
+      </div>
     </div>
   );
 }
