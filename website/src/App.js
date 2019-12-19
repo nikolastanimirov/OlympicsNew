@@ -4,22 +4,20 @@ import Header from "./sources/header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import backgrd from "./resources/1.png";
 import Countdown from "./countdown/Coutdown";
-import Sponsors from "./sources/SponsorsData";
+
 import TeamMember from "./sources/TeamMembers";
 import Carousel from "./sources/Carousel";
-import SportsData from "./sources/SportsData";
-import Main from "./sources/Main";
-import About from "./sources/About";
 
+import Main from "./sources/Main";
+import Fire from "./resources/flame.gif";
+import Home from "./sources/Home";
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
-      <About />
-      <Sponsors />
+      <Home />
+
       <Carousel />
-      <SportsData />
     </div>
   );
 }

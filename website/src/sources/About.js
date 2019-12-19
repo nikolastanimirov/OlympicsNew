@@ -23,7 +23,7 @@ class About extends Component {
         <div class="col-4 col-md-6">
           <div class="about-us">
             <h2>About Olympics</h2>
-            <span>Lorem</span>
+            <Main />
           </div>
         </div>
       </div>
