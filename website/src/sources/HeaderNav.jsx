@@ -48,17 +48,12 @@ class HeaderNav extends Component {
               </li>
               <li className="nav-item">
                 <a href="#" className="nav-link">
-                  Crew
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Gallery
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
                   Sponsors
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  Crew
                 </a>
               </li>
               <li className="nav-item">

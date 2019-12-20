@@ -9,7 +9,9 @@ class FooterUpper extends Component {
             <div class="col">
               <h2>Olympics</h2>
             </div>
-            <div class="col">Follow us:</div>
+            <div class="col">
+              <h2>Follow us:</h2>
+            </div>
             <div class="w-100"></div>
             <div class="col">
               Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -3,12 +3,13 @@ import Sports from "./Sports";
 import Dodgeball from "../resources/sports/dodgeball.jpg";
 import Arm from "../resources/sports/arm.jpg";
 import Bowling from "../resources/sports/bowling.jpg";
-
+import Headline from "../sources/Headline";
 import "../static/SportsData.css";
 
 function SportsData() {
   return (
     <div className="sports">
+      <Headline title="Sports" />
       <ul>
         <li>
           <Sports

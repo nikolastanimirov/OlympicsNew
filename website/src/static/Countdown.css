@@ -20,7 +20,6 @@
 .countdown-mainframe li {
   display: inline-block;
   margin-left: 5px;
-  border: 1px solid #ff8f26;
   background: rgb(40, 34, 108);
 }
 .block {

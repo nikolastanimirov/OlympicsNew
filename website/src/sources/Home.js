@@ -10,9 +10,9 @@ class Home extends Component {
       <div className="homeBody">
         <div className="para">
           <div className="first">
-            <p>AUBG Olympics</p>
+            <h2>AUBG Olympics</h2>
             <hr size="2px" width="75%" />
-            <h2>Checkout the events we organize</h2>
+            <h3>Checkout the events we organize</h3>
             {"\n"}
             <button className="btn btn-warning">Events</button>
           </div>
