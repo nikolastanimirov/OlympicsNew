@@ -7,7 +7,7 @@ import "../static/About.css";
 class About extends Component {
   render() {
     return (
-      <div className="about-page">
+      <div id="about" className="about-page">
         <Headline title="About" />
         <div className="row align-items-center">
           <div className="col-8 col-md-6">

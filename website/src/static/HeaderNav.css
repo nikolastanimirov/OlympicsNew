@@ -14,8 +14,12 @@ nav {
   transition: all ease 1s;
   position: fixed !important;
   z-index: 9999 !important;
-}
 
+  font-weight: bold;
+}
+nav li:hover {
+  color: orange !important;
+}
 nav.black {
   background: #1c2b5a !important;
   color: orange !important;
@@ -49,4 +53,7 @@ nav.black .logo {
 
     margin-top: -35px;
   }
+}
+.nav-item {
+  padding: 15px;
 }

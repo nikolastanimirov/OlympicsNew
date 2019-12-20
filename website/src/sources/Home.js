@@ -3,11 +3,12 @@ import "../static/Home.css";
 import About from "../sources/About";
 import Sponsors from "../sources/SponsorsData";
 import SportsData from "../sources/SportsData";
+import Carousel from "../sources/Carousel";
 import Sign from "./Sign";
 class Home extends Component {
   render() {
     return (
-      <div className="homeBody">
+      <div id="home" className="homeBody">
         <div className="para">
           <div className="first">
             <h2>AUBG Olympics</h2>
@@ -30,6 +31,9 @@ class Home extends Component {
         </div>
         <div className="para">
           <Sponsors />
+        </div>
+        <div className="para">
+          <Carousel />
         </div>
       </div>
     );

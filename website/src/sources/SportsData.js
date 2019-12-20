@@ -8,7 +8,7 @@ import "../static/SportsData.css";
 
 function SportsData() {
   return (
-    <div className="sports">
+    <div id="sports" className="sports">
       <Headline title="Sports" />
       <ul>
         <li>

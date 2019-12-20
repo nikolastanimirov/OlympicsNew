@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../static/HeaderNav.css";
 import $ from "jquery";
 import Logo from "../resources/Logo2019.png";
+import NavScroll from "../sources/NavScroll";
 
 class HeaderNav extends Component {
   render() {
@@ -32,44 +33,33 @@ class HeaderNav extends Component {
           <div className="collapse navbar-collapse " id="myNavbar7">
             <ul className="navbar-nav ml-auto flex-nowrap">
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Home
-                </a>
+                <NavScroll className="nav-link" link="home" name="Home" />
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  About
-                </a>
+                <NavScroll className="nav-link" link="about" name="About" />
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Sports
-                </a>
+                <NavScroll className="nav-link" link="sports" name="Sport" />
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Sponsors
-                </a>
+                <NavScroll
+                  className="nav-link"
+                  link="sponsors"
+                  name="Sponsors"
+                />
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Crew
-                </a>
+                <NavScroll className="nav-link" link="crew" name="Crew" />
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Contact us
-                </a>
+                <NavScroll
+                  className="nav-link"
+                  link="contact-us"
+                  name="Contacts"
+                />
               </li>
               <li className="nav-item">
-                <a
-                  href="#"
-                  className="nav-link disabled"
-                  tabIndex="-1"
-                  aria-disabled="true"
-                >
-                  Sign Up
-                </a>
+                <NavScroll className="nav-link" link="sign-up" name="Sign-up" />
               </li>
             </ul>
           </div>

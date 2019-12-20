@@ -4,7 +4,7 @@ import Headline from "../sources/Headline";
 class Contact extends Component {
   render() {
     return (
-      <div className="contact-container">
+      <div id="contact-us" className="contact-container">
         <Headline title="Contact us" />
         <h4>If you have any qustions, do not hesitate to contact us @:</h4>
         <div class="container-contact-info">

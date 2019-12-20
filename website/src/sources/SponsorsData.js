@@ -7,7 +7,7 @@ import Detelina from "../resources/sponsors/detelina2018.png";
 import "../static/Sponsors.css";
 function Data() {
   return (
-    <div className="sponsors">
+    <div id="sporsors" className="sponsors">
       <p className="sponsors-title">Sponsors</p>
       <ul>
         <li>

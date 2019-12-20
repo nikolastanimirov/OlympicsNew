@@ -8,7 +8,7 @@ import Natalia from "../resources/crew/NataliaFinal.jpg";
 import "../static/Crew.css";
 function Data() {
   return (
-    <div className="crew">
+    <div id="crew" className="crew">
       <Headline title="Crew" />
       <ul>
         <li>
