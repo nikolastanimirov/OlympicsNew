@@ -6,24 +6,26 @@ import "../static/About.css";
 class About extends Component {
   render() {
     return (
-      <div class="row align-items-center">
-        <div class="col-8 col-md-6">
-          <div class="count">
-            <Countdown />
+      <div className="about-page">
+        <div className="row align-items-center">
+          <div className="col-8 col-md-6">
+            <div className="count">
+              <Countdown />
+            </div>
+            <div className="sign-up">
+              <li>
+                <Arrow />
+              </li>
+              <li>
+                <Arrow />
+              </li>
+            </div>
           </div>
-          <div class="sign-up">
-            <li>
-              <Arrow />
-            </li>
-            <li>
-              <Arrow />
-            </li>
-          </div>
-        </div>
-        <div class="col-4 col-md-6">
-          <div class="about-us">
-            <h2>About Olympics</h2>
-            <Main />
+          <div className="col-4 col-md-6">
+            <div className="about-us">
+              <h2>About Olympics</h2>
+              <Main />
+            </div>
           </div>
         </div>
       </div>

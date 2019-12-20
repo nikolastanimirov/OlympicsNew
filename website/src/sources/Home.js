@@ -3,23 +3,32 @@ import "../static/Home.css";
 import About from "../sources/About";
 import Sponsors from "../sources/SponsorsData";
 import SportsData from "../sources/SportsData";
+import Sign from "./Sign";
 class Home extends Component {
   render() {
     return (
-      <div class="homeBody">
-        <div class="para">
-          <h2 class="first">AUBG Olympics</h2>
+      <div className="homeBody">
+        <div className="para">
+          <div className="first">
+            <p>AUBG Olympics</p>
+            <hr size="2px" width="75%" />
+            <h2>Checkout the events we organize</h2>
+            {"\n"}
+            <button className="btn btn-warning">Events</button>
+          </div>
         </div>
-        <div class="para">
+        <div className="para">
           <About />
         </div>
-        <div class="para">
-          <h2>DIV 3</h2>
+        <div className="para">
+          <h2>
+            <Sign />
+          </h2>
         </div>
-        <div class="para">
+        <div className="para">
           <SportsData />
         </div>
-        <div class="para">
+        <div className="para">
           <Sponsors />
         </div>
       </div>

@@ -13,64 +13,64 @@ class HeaderNav extends Component {
       }
     });
     return (
-      <div class="headerNav">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"> </span>
-            <img class="logo" src={Logo} alt="Olympics" />
-            <div class="w-100 text-right">
+      <div className="headerNav">
+        <nav className="navbar navbar-expand-lg navbar-dark">
+          <div className="d-flex flex-grow-1">
+            <span className="w-100 d-lg-none d-block"> </span>
+            <img className="logo" src={Logo} alt="Olympics" />
+            <div className="w-100 text-right">
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#myNavbar7"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
             </div>
           </div>
-          <div class="collapse navbar-collapse " id="myNavbar7">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+          <div className="collapse navbar-collapse " id="myNavbar7">
+            <ul className="navbar-nav ml-auto flex-nowrap">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   Sports
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   Crew
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   Gallery
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   Sponsors
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   Contact us
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
                   href="#"
-                  class="nav-link disabled"
-                  tabindex="-1"
+                  className="nav-link disabled"
+                  tabIndex="-1"
                   aria-disabled="true"
                 >
                   Sign Up

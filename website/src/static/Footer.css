@@ -1,0 +1,17 @@
+.footer {
+  color: #fff;
+}
+.container-footer {
+  padding: 15px;
+}
+.FooterUpper {
+  background-color: #1c2b5a;
+}
+.FooterLower {
+  background-color: rgb(3, 3, 56);
+}
+.FooterLower {
+  font-size: 20px;
+  padding: 15px 0px 10px 0px;
+  color: rgb(152, 152, 152);
+}
