@@ -1,10 +1,4 @@
 .about-page .row {
-  width: 90% !important;
-  margin: 50px auto;
-}
-
-.about-page .row {
-  height: 500px !important;
 }
 .count {
   margin-top: -30px;
@@ -15,4 +9,16 @@
 .sign-up li {
   display: inline-block;
   padding: 15px;
+}
+.align-items-center {
+  align-items: none !important;
+}
+
+.about-page {
+  border: 2px solid red;
+}
+.col-6 {
+  border: 1px solid yellow;
+}
+.about-us {
 }

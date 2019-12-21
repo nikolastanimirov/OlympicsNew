@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../static/Footer.css";
+import FacebookIcon from "../resources/icons/facebook.png";
+import InstagramIcon from "../resources/icons/instagram.png";
 class FooterUpper extends Component {
   render() {
     return (
@@ -18,9 +20,14 @@ class FooterUpper extends Component {
               industry.
             </div>
             <div class="col">
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>something</li>
+              <div class="number">
+                <img src={FacebookIcon} />
+                <h6>Facebook</h6>
+              </div>
+              <div class="number">
+                <img src={InstagramIcon} />
+                <h6>Instagram</h6>
+              </div>
             </div>
             <div class="w-100"></div>
           </div>

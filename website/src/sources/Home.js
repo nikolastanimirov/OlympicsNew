@@ -4,6 +4,7 @@ import About from "../sources/About";
 import Sponsors from "../sources/SponsorsData";
 import SportsData from "../sources/SportsData";
 import Carousel from "../sources/Carousel";
+import Crew from "../sources/Crew";
 import Sign from "./Sign";
 class Home extends Component {
   render() {
@@ -33,7 +34,7 @@ class Home extends Component {
           <Sponsors />
         </div>
         <div className="para">
-          <Carousel />
+          <Crew />
         </div>
       </div>
     );

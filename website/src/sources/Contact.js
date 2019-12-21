@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "../static/Contact.css";
+import EmailIcon from "../resources/icons/email.png";
+import LocationIcon from "../resources/icons/location.png";
+import PhoneIcon from "../resources/icons/phone.png";
 import Headline from "../sources/Headline";
 class Contact extends Component {
   render() {
@@ -11,21 +14,24 @@ class Contact extends Component {
           <div class="row">
             <div class="col-sm">
               <div class="number">
-                <img src="#" />
-                64564545645
+                <img src={PhoneIcon} />
+                <h4>64564545645</h4>
               </div>
             </div>
             <div class="col-sm">
               <div class="email">
-                <img src="#" />
-                aubgolympicscommittee@gmail.com
+                <img src={EmailIcon} />
+                <h4> aubgolympicscommittee@gmail.com</h4>
               </div>
             </div>
             <div class="col-sm">
               <div class="number">
-                <img src="#" />
-                ул. „Свобода Бъчварова“ 6, 2700 Южна промишлена зона,
-                Благоевград
+                <img src={LocationIcon} />
+                <h4>
+                  {" "}
+                  ул. „Свобода Бъчварова“ 6, 2700 Южна промишлена зона,
+                  Благоевград
+                </h4>
               </div>
             </div>
           </div>

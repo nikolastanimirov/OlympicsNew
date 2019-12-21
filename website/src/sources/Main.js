@@ -8,58 +8,58 @@ function Main() {
   return (
     <div
       id="carouselExampleIndicators"
-      className="carousel slide"
+      class="carousel slide"
       data-ride="carousel"
     >
-      <ol className="carousel-indicators">
+      <ol class="carousel-indicators">
         <li
           data-target="#carouselExampleIndicators"
           data-slide-to="0"
-          className="active"
+          class="active"
         ></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img className="slideImage" src={Dodgeball} alt="First slide" />
-          <div className="carousel-caption d-none d-md-block">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="slideImage" src={Dodgeball} alt="First slide" />
+          <div class="carousel-caption d-none d-md-block">
             <h5>...</h5>
             <p>...</p>
           </div>
         </div>
-        <div className="carousel-item">
-          <img className="slideImage" src={Dodgeball} alt="Second slide" />
-          <div className="carousel-caption d-none d-md-block">
+        <div class="carousel-item">
+          <img class="slideImage" src={Arm} alt="Second slide" />
+          <div class="carousel-caption d-none d-md-block">
             <h5>...</h5>
             <p>...</p>
           </div>
         </div>
-        <div className="carousel-item">
-          <img className="slideImage" src={Dodgeball} alt="Third slide" />
-          <div className="carousel-caption d-none d-md-block">
+        <div class="carousel-item">
+          <img class="slideImage" src={Bowling} alt="Third slide" />
+          <div class="carousel-caption d-none d-md-block">
             <h5>...</h5>
             <p>...</p>
           </div>
         </div>
       </div>
       <a
-        className="carousel-control-prev"
+        class="carousel-control-prev"
         href="#carouselExampleIndicators"
         role="button"
         data-slide="prev"
       >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
       </a>
       <a
-        className="carousel-control-next"
+        class="carousel-control-next"
         href="#carouselExampleIndicators"
         role="button"
         data-slide="next"
       >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
       </a>
     </div>
   );

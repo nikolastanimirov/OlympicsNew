@@ -1,14 +1,3 @@
-.slide {
-  border: none;
-  vertical-align: none;
-  height: 50vh;
-  width: 100%;
-  padding: none;
-  text-align: none;
-  transition: all ease 0.3s;
-  padding: 0;
-  margin: 0;
-}
 .slideImage {
   width: 100%;
   height: 50vh;
