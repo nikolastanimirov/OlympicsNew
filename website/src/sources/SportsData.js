@@ -1,6 +1,6 @@
 import React from "react";
 import Sports from "./Sports";
-import Dodgeball from "../resources/sports/dodgeball.jpg";
+import Dodgeball from "../resources/sports/dodgeball.png";
 import Arm from "../resources/sports/arm.jpg";
 import Bowling from "../resources/sports/bowling.jpg";
 import Headline from "../sources/Headline";

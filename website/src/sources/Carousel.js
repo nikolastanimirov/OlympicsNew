@@ -4,7 +4,7 @@ import scrollTo from "./scrollToAnimate";
 import TeamMembers from "./TeamMembers";
 import ArrLeft from "../resources/arrow-left.svg";
 import ArrRight from "../resources/arrow-right.svg";
-import Headline from "../sources/Headline";
+
 class Carousel extends React.Component {
   constructor(props) {
     super(props);

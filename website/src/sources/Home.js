@@ -3,7 +3,7 @@ import "../static/Home.css";
 import About from "../sources/About";
 import Sponsors from "../sources/SponsorsData";
 import SportsData from "../sources/SportsData";
-import Carousel from "../sources/Carousel";
+import NavScroll from "../sources/NavScroll";
 import Crew from "../sources/Crew";
 import Sign from "./Sign";
 class Home extends Component {
@@ -16,7 +16,9 @@ class Home extends Component {
             <hr size="2px" width="75%" />
             <h3>Checkout the events we organize</h3>
             {"\n"}
-            <button className="btn btn-warning">Events</button>
+            <button class="btn btn-warning">
+              <NavScroll className="nav-link" link="about" name="Events" />
+            </button>
           </div>
         </div>
         <div className="para">

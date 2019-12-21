@@ -1,7 +1,5 @@
 import React from "react";
-import Dodgeball from "../resources/sports/dodgeball.jpg";
-import Arm from "../resources/sports/arm.jpg";
-import Bowling from "../resources/sports/bowling.jpg";
+import Dodgeball from "../resources/sports/dodgeball.png";
 import "../static/Main.css";
 
 function Main() {
@@ -24,22 +22,22 @@ function Main() {
         <div class="carousel-item active">
           <img class="slideImage" src={Dodgeball} alt="First slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+            <h5>Dodgeball Challege</h5>
+            <p>2019</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="slideImage" src={Arm} alt="Second slide" />
+          <img class="slideImage" src={Dodgeball} alt="Second slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+            <h5>Dodgeball Challege</h5>
+            <p>2019</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="slideImage" src={Bowling} alt="Third slide" />
+          <img class="slideImage" src={Dodgeball} alt="Third slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+            <h5>Dodgeball Challege</h5>
+            <p>2019</p>
           </div>
         </div>
       </div>
