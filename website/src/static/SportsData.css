@@ -16,6 +16,7 @@
 }
 .container1 {
   position: relative;
+  border: 1px solid red;
 }
 .overlay1 {
   position: absolute;
@@ -46,4 +47,16 @@
   visibility: visible;
   top: 160px;
   left: -120px;
+}
+.modal-content {
+  top: 200px;
+  z-index: 9999;
+}
+.sports-span {
+  position: absolute;
+  text-align: center;
+  margin-top: -80px;
+  overflow: hidden;
+  margin-left: 150px;
+  opacity: 0;
 }

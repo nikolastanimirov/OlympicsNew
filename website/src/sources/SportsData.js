@@ -5,20 +5,25 @@ import Arm from "../resources/sports/arm.jpg";
 import Bowling from "../resources/sports/bowling.jpg";
 import Headline from "../sources/Headline";
 import "../static/SportsData.css";
-
+import DodgeballSignUp from "./sports/DodgeballSignUp";
+import $ from "jquery";
 function SportsData() {
+  $(".sport-container").hover(function() {
+    $(".sports-span").css({ opacity: "1" });
+  });
   return (
     <div id="sports" className="sports">
       <Headline title="Sports" />
       <ul>
         <li>
-          <Sports
-            img={Dodgeball}
-            alt="Dodgeball"
-            url="https://www.google.com"
-            title="Dodgeball"
-            link="#"
-          />
+          <div class="sport-container">
+            <Sports img={Dodgeball} alt="Dodgeball" title="Dodgeball" />
+            <div class="sports-span">
+              <div class="test">
+                <DodgeballSignUp />
+              </div>
+            </div>
+          </div>
         </li>
         <li>
           <Sports
@@ -44,6 +49,7 @@ function SportsData() {
             title="Bowling"
           />
         </li>
+        <li></li>
       </ul>
     </div>
   );

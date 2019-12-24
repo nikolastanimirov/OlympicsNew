@@ -1,6 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const mysql = require("mysql");
+const config = require("./config/index");
+const email = require("./config/email");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -8,10 +11,22 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+//Create connection
+const db = mysql.createConnection(config.mysql);
+
+//Connect
+db.connect(err => {
+  if (err) {
+    console.log(err);
+  }
+  console.log("Mysql Connected");
+});
+
 app.get("/api/hello", (req, res) => {
   res.send({ express: "hello" });
 });
 
+//Sends Emails to GMAIL
 app.post("/api/form", (req, res) => {
   nodemailer.createTestAccount((err, account) => {
     const htmlEmail = `
@@ -33,14 +48,7 @@ app.post("/api/form", (req, res) => {
     <p>${req.body.message}</p>
     `;
 
-    let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      auth: {
-        user: "olympicstest22@gmail.com",
-        pass: "Ns333666999"
-      }
-    });
+    let transporter = nodemailer.createTransport(email);
     let mailOptions = {
       from: "fastfive8@gmail.com",
       to: "olympicstest22@gmail.com",
@@ -56,5 +64,32 @@ app.post("/api/form", (req, res) => {
     });
   });
 });
+app.post("/api/dodgeball", (req, res) => {
+  let post = {
+    FirstName: req.body.FirstName,
+    LastName: req.body.LastName,
+    Email: req.body.Email
+  };
+  let sql = "INSERT INTO dodgeball SET ?";
+  let query = db.query(sql, post, (err, result) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(result);
 
+    res.send("item added");
+  });
+});
+
+//Get Sign Up People
+app.get("/api/signups", (req, res) => {
+  let sql = "SELECT * FROM dodgeball";
+  let query = db.query(sql, (err, results) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(results);
+    res.json(results);
+  });
+});
 app.listen(port, () => console.log(`Listening on port ${port}`));

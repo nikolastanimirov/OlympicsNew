@@ -92,7 +92,7 @@ class Contact extends Component {
             <div class="form-group col-md-12">
               <label for="inputAddress">Message</label>
               <input
-                type="text"
+                type="textarea"
                 class="form-control"
                 id="inputAddress"
                 name="message"
