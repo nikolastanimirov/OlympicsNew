@@ -1,0 +1,11 @@
+.login-page .fire-logo {
+  width: 450px;
+  height: 600px;
+}
+
+.login-form {
+  margin: 200px 0px;
+}
+.login-page .form-group {
+  text-align: left !important;
+}
