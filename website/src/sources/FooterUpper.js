@@ -22,13 +22,13 @@ class FooterUpper extends Component {
             <div class="col">
               <div class="number">
                 <a href="https://www.facebook.com/aubgolympics">
-                  <img src={FacebookIcon} />
+                  <img src={FacebookIcon} alt="facebook" />
                 </a>
                 <h6>Facebook</h6>
               </div>
               <div class="number">
                 <a href="https://www.instagram.com/aubg_olympics">
-                  <img src={InstagramIcon} />
+                  <img src={InstagramIcon} alt="instagram" />
                 </a>
                 <h6>Instagram</h6>
               </div>

@@ -68,7 +68,7 @@ class Dodgeball extends Component {
               We'll never share your email with anyone else.
             </small>
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-warning">
             Submit
           </button>
         </form>{" "}

@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import DodgeballForm from "./DodgeballForm";
+import $ from "jquery";
 class DodgeballSignUp extends Component {
   render() {
+    function shoot() {
+      $(".sports-span").css({ opacity: "1" });
+    }
+    function shoot1() {
+      $(".sports-span").css({ opacity: "0" });
+    }
     return (
       <div>
         {" "}
@@ -11,6 +18,7 @@ class DodgeballSignUp extends Component {
             class="btn btn-warning"
             data-toggle="modal"
             data-target="#myModal"
+            onClick={shoot}
           >
             Sign Up
           </button>
@@ -27,8 +35,9 @@ class DodgeballSignUp extends Component {
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-default"
+                    class="btn btn-warning"
                     data-dismiss="modal"
+                    onClick={shoot1}
                   >
                     Close
                   </button>

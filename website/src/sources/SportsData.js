@@ -6,11 +6,9 @@ import Bowling from "../resources/sports/bowling.jpg";
 import Headline from "../sources/Headline";
 import "../static/SportsData.css";
 import DodgeballSignUp from "./sports/DodgeballSignUp";
-import $ from "jquery";
+
 function SportsData() {
-  $(".sport-container").hover(function() {
-    $(".sports-span").css({ opacity: "1" });
-  });
+
   return (
     <div id="sports" className="sports">
       <Headline title="Sports" />
