@@ -1,0 +1,68 @@
+@media only screen and (max-width: 600px) {
+  p,
+  h2,
+  h1,
+  h6,
+  h4 {
+    font-size: 40px !important;
+  }
+  .nav-bar {
+    padding: none;
+  }
+  .d-flex .logo {
+    padding-top: 15px !important;
+  }
+  nav {
+    max-width: 145vh !important;
+  }
+  .navbar-collapse {
+    margin-top: -10px;
+  }
+  .headline {
+    margin: 0 80px;
+  }
+  .para .first {
+    visibility: hidden;
+  }
+  .slide {
+    visibility: hidden;
+  }
+  .para {
+    width: 145vh;
+    height: 150vh;
+  }
+  .contact-us {
+    width: 145vh;
+  }
+  .contact-us-memo {
+    padding-left: 25px;
+  }
+  .contact-container h4 {
+    font-size: 30px !important;
+  }
+  .container-contact-info {
+    margin: 0 80px;
+  }
+  .contact-form {
+    width: 100vh;
+    margin: 20px 150px !important;
+  }
+  .copyright {
+    font-size: 18px;
+  }
+  .footer {
+    width: 145vh !important;
+  }
+  .container-footer {
+    font-size: 18px;
+  }
+  .container-footer h2 {
+    font-size: 32px;
+  }
+  .container-footer h6 {
+    font-size: 15px;
+  }
+  .sponsors ul li {
+    max-width: 50vh !important;
+  }
+}

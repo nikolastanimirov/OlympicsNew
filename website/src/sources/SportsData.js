@@ -8,7 +8,6 @@ import "../static/SportsData.css";
 import DodgeballSignUp from "./sports/DodgeballSignUp";
 
 function SportsData() {
-
   return (
     <div id="sports" className="sports">
       <Headline title="Sports" />
@@ -17,9 +16,7 @@ function SportsData() {
           <div class="sport-container">
             <Sports img={Dodgeball} alt="Dodgeball" title="Dodgeball" />
             <div class="sports-span">
-              <div class="test">
-                <DodgeballSignUp />
-              </div>
+              <DodgeballSignUp />
             </div>
           </div>
         </li>

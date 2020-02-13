@@ -1,10 +1,11 @@
-.login-page .fire-logo {
-  width: 450px;
-  height: 600px;
+.login-page {
+  background-color: rgba(252, 249, 249, 0.245);
 }
 
 .login-form {
-  margin: 200px 0px;
+  width: 50%;
+  height: 50vh;
+  margin: 0 auto;
 }
 .login-page .form-group {
   text-align: left !important;

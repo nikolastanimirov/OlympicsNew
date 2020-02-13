@@ -9,6 +9,9 @@ class DodgeballSignUp extends Component {
     function shoot1() {
       $(".sports-span").css({ opacity: "0" });
     }
+    setTimeout(1000, () => {
+      $(".sports-span").css({ opacity: "1" });
+    });
     return (
       <div>
         {" "}

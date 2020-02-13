@@ -2,11 +2,20 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const mysql = require("mysql");
-const config = require("./config/index");
+const config = require("./config/db");
 const email = require("./config/email");
+const session = require("express-session");
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(
+  session({
+    secret: "secret",
+    resave: true,
+    saveUninitialized: true
+  })
+);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -75,21 +84,54 @@ app.post("/api/dodgeball", (req, res) => {
     if (err) {
       console.log(err);
     }
-    console.log(result);
 
     res.send("item added");
   });
 });
 
+app.post("/api/login", function(request, response) {
+  var username = request.body.username;
+  var password = request.body.password;
+  console.log(username);
+  console.log(password);
+  if (username && password) {
+    db.query(
+      "SELECT * FROM login WHERE username = ? AND password = ?",
+      [username, password],
+      function(error, results, fields) {
+        if (results.length > 0) {
+          request.session.loggedin = true;
+          request.session.username = username;
+
+          return response.redirect("/signups");
+        } else {
+          console.log(error);
+          response.send("Incorrect Username and/or Password!");
+        }
+        response.end();
+      }
+    );
+  } else {
+    response.send("Please enter Username and Password!");
+    response.end();
+  }
+});
+
 //Get Sign Up People
-app.get("/api/signups", (req, res) => {
-  let sql = "SELECT * FROM dodgeball";
-  let query = db.query(sql, (err, results) => {
-    if (err) {
-      console.log(err);
-    }
-    console.log(results);
-    res.json(results);
-  });
+app.get("/api/signup", (req, res) => {
+  if (req.session.loggedin) {
+    // let sql = "SELECT * FROM dodgeball";
+    // let query = db.query(sql, (err, results) => {
+    //   if (err) {
+    //     console.log(err);
+    //   }
+    //   res.json(results);
+    // });
+
+    res.json("Logged");
+  } else {
+    res.send("Please login to view this page!");
+  }
+  res.end();
 });
 app.listen(port, () => console.log(`Listening on port ${port}`));

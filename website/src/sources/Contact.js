@@ -34,7 +34,9 @@ class Contact extends Component {
     return (
       <div id="contact-us" className="contact-container">
         <Headline title="Contact us" />
-        <h4>If you have any qustions, do not hesitate to contact us @:</h4>
+        <h4 className="contact-us-memo">
+          If you have any qustions, do not hesitate to contact us @:
+        </h4>
         <div class="container-contact-info">
           <div class="row">
             <div class="col-sm">

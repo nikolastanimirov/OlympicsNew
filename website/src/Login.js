@@ -1,44 +1,64 @@
 import React, { Component } from "react";
 import "./static/Login.css";
 import Footer from "./sources/Footer";
-import FireLogo from "./resources/flame-2.png";
+import axios from "axios";
+import FireLogo from "./resources/Logo2019.png";
 class Login extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      username: "",
+      password: ""
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSumit = this.handleSumit.bind(this);
+  }
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+  async handleSumit(e) {
+    e.preventDefault();
+
+    const { username, password } = this.state;
+    const form = await axios.post("/api/login", {
+      username,
+      password
+    });
+  }
   render() {
     return (
       <div class="login-page">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <img class="fire-logo" src={FireLogo} alt="fire-logo" />
-            </div>
-            <div class="col">
-              <form class="login-form">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Password"
-                  />
-                </div>
-                <button type="submit" class="btn btn-warning">
-                  Sign In
-                </button>
-              </form>
-            </div>
+        <img src={FireLogo} class="fire-logo" alt="fire-logo" />
+        <form class="login-form" onSubmit={this.handleSumit}>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="username"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter username"
+              name="username"
+              onChange={this.handleChange}
+            />
           </div>
-        </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+              name="password"
+              onChange={this.handleChange}
+            />
+          </div>
+          <button type="submit" class="btn btn-warning">
+            Sign In
+          </button>
+        </form>
+
         <Footer />
       </div>
     );

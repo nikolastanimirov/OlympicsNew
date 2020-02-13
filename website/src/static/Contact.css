@@ -1,21 +1,20 @@
 .contact-container {
-  width: 90%;
-  margin: 150px auto;
+  width: 100%;
 }
 .contact-container .headline {
   font-size: 50px;
 }
 
 .contact-container h4 {
-  padding-top: 25px;
+  padding: 25px;
 }
 .contact-form {
-  height: 30vh;
-  margin: 70px 350px;
+  width: 75%;
+  margin: 50px auto;
+  padding: 25px;
 }
 .container-contact-info {
   width: 90%;
-  padding-top: 55px;
 }
 .number img {
   padding-left: 10px;
