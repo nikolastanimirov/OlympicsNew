@@ -28,7 +28,7 @@ db.connect(err => {
   if (err) {
     console.log(err);
   }
-  console.log("Mysql Connected");
+  console.log("Mysql is connected successfully...");
 });
 
 app.get("/api/hello", (req, res) => {
@@ -103,7 +103,7 @@ app.post("/api/login", function(request, response) {
           request.session.loggedin = true;
           request.session.username = username;
 
-          return response.redirect("/signups");
+          return response.redirect("/signup");
         } else {
           console.log(error);
           response.send("Incorrect Username and/or Password!");
@@ -118,20 +118,16 @@ app.post("/api/login", function(request, response) {
 });
 
 //Get Sign Up People
-app.get("/api/signup", (req, res) => {
-  if (req.session.loggedin) {
-    // let sql = "SELECT * FROM dodgeball";
-    // let query = db.query(sql, (err, results) => {
-    //   if (err) {
-    //     console.log(err);
-    //   }
-    //   res.json(results);
-    // });
-
-    res.json("Logged");
-  } else {
-    res.send("Please login to view this page!");
-  }
-  res.end();
+app.get("/api/dodgeball", (req, res) => {
+  db.query("SELECT * FROM dodgeball", (err, result) => {
+    if (err) throw err;
+    res.send(result);
+  });
 });
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.get("/api/swimming", (req, res) => {
+  db.query("SELECT * FROM swimming", (err, result) => {
+    if (err) throw err;
+    res.send(result);
+  });
+});
+app.listen(port, () => console.log(`Listening on port ${port}...`));

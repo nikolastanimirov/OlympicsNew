@@ -41,19 +41,19 @@ class Contact extends Component {
           <div class="row">
             <div class="col-sm">
               <div class="number">
-                <img src={PhoneIcon} />
+                <img src={PhoneIcon} alt="phone"/>
                 <h4>64564545645</h4>
               </div>
             </div>
             <div class="col-sm">
               <div class="email">
-                <img src={EmailIcon} />
+                <img src={EmailIcon} alt="email" />
                 <h4> aubgolympicscommittee@gmail.com</h4>
               </div>
             </div>
             <div class="col-sm">
               <div class="number">
-                <img src={LocationIcon} />
+                <img src={LocationIcon} alt="location"/>
                 <h4>
                   {" "}
                   ул. „Свобода Бъчварова“ 6, 2700 Южна промишлена зона,
