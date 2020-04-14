@@ -8,7 +8,7 @@ class Clock extends Component {
       days: 0,
       hours: 0,
       minutes: 0,
-      seconds: 0
+      seconds: 0,
     };
   }
   componentWillMount() {
@@ -34,26 +34,26 @@ class Clock extends Component {
       days,
       hours,
       minutes,
-      seconds
+      seconds,
     });
   }
   render() {
     return (
       <ul className="countdown-mainframe">
         <li>
-          <div className="block">
+          <div className="block1">
             <div className="Clock-days">{this.leading0(this.state.days)}</div>
             <div className="clock-title">DAYS</div>
           </div>
         </li>
         <li>
-          <div className="block">
+          <div className="block2">
             <div className="Clock-hours">{this.leading0(this.state.hours)}</div>
             <div className="clock-title">HOURS</div>
           </div>
         </li>
         <li>
-          <div className="block">
+          <div className="block3">
             <div className="Clock-minutes">
               {this.leading0(this.state.minutes)}
             </div>
@@ -61,7 +61,7 @@ class Clock extends Component {
           </div>
         </li>
         <li>
-          <div className="block">
+          <div className="block4">
             <div className="Clock-seconds">
               {this.leading0(this.state.seconds)}
             </div>

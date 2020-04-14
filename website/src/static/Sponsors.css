@@ -1,8 +1,11 @@
 .sponsors ul li {
   display: inline-block;
-  width: 150px;
-  height: 150px;
 }
+.sponsors img {
+  width: 150px;
+  max-height: 150px;
+}
+
 .sponsors {
   height: 100hv;
   align-content: center;

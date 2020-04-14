@@ -8,12 +8,12 @@ class Dodgeball extends Component {
     this.state = {
       FirstName: "",
       LastName: "",
-      Email: ""
+      Email: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSumit = this.handleSumit.bind(this);
   }
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
   async handleSumit(e) {
@@ -23,7 +23,7 @@ class Dodgeball extends Component {
     const form = await axios.post("/api/dodgeball", {
       FirstName,
       LastName,
-      Email
+      Email,
     });
   }
   render() {
@@ -68,7 +68,7 @@ class Dodgeball extends Component {
               We'll never share your email with anyone else.
             </small>
           </div>
-          <button type="submit" class="btn btn-warning">
+          <button type="submit" class="btn btn-success">
             Submit
           </button>
         </form>{" "}

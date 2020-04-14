@@ -1,5 +1,8 @@
 import React from "react";
 import Dodgeball from "../resources/sports/dodgeball.png";
+import slide_image_1 from "../resources/slider/1.png";
+import slide_image_2 from "../resources/slider/2.png";
+import slide_image_3 from "../resources/slider/3.png";
 import "../static/Main.css";
 
 function Main() {
@@ -9,35 +12,33 @@ function Main() {
       class="carousel slide"
       data-ride="carousel"
     >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="slideImage" src={Dodgeball} alt="First slide" />
+          <img class="slideImage" src={slide_image_1} alt="First slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Dodgeball Challege</h5>
-            <p>2019</p>
+            <h2>Olympiad</h2>
+            <h5>2017</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="slideImage" src={Dodgeball} alt="Second slide" />
+          <img class="slideImage" src={slide_image_3} alt="Second slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Dodgeball Challege</h5>
-            <p>2019</p>
+            <h2>Olympiad</h2>
+            <h5>2017</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="slideImage" src={Dodgeball} alt="Third slide" />
+          <img class="slideImage" src={slide_image_2} alt="Third slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Dodgeball Challege</h5>
-            <p>2019</p>
+            <h2>Olympiad</h2>
+            <h5>2017</h5>
           </div>
         </div>
       </div>

@@ -8,17 +8,20 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "concurrently": "^5.0.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.0",
     "jquery": "^3.4.1",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.17.1",
+    "mysql2": "^2.1.0",
     "nodemailer": "^6.4.2",
     "popper.js": "^1.16.0",
     "query": "^0.2.0",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-scroll": "^1.7.14"
+    "react-scroll": "^1.7.14",
+    "sequelize": "^5.21.6"
   },
   "devDependencies": {
     "express-pino-logger": "^4.0.0",

@@ -1,31 +1,75 @@
 import React from "react";
 import Sponsors from "./Sponsors";
-import Amizade from "../resources/sponsors/amizade.png";
-import Pirinsko from "../resources/sponsors/pirinsko.png";
-import Detelina from "../resources/sponsors/detelina2018.png";
+import Sponsor from "../resources/sponsors/sponsorss.png";
 
 import "../static/Sponsors.css";
 function Data() {
   return (
     <div id="sporsors" className="sponsors">
       <p className="sponsors-title">Sponsors</p>
-      <ul>
+      <ul class="container">
         <li>
-          <Sponsors img={Amizade} alt="Amizade" url="https://www.google.com" />
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
         </li>
         <li>
-          <Sponsors
-            img={Pirinsko}
-            alt="Pirinsko"
-            url="https://www.google.com"
-          />
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
         </li>
         <li>
-          <Sponsors
-            img={Detelina}
-            alt="Detelina"
-            url="https://www.google.com"
-          />
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
+        </li>
+        <li>
+          <Sponsors img={Sponsor} alt="sponsors" url="#" />
         </li>
       </ul>
     </div>

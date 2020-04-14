@@ -1,12 +1,3 @@
-.login-page {
-  background-color: rgba(252, 249, 249, 0.245);
-}
-
-.login-form {
-  width: 50%;
-  height: 50vh;
-  margin: 0 auto;
-}
-.login-page .form-group {
-  text-align: left !important;
+.col-md-5 form {
+  margin-top: 150px;
 }

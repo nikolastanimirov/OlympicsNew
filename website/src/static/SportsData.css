@@ -1,6 +1,6 @@
 .sports ul li img {
   width: 300px;
-  height: 300px;
+  height: 275px;
 }
 .sports {
   width: 90%;
@@ -17,7 +17,7 @@
 .container1 {
   position: relative;
 }
-.overlay1 {
+/* .overlay1 {
   position: absolute;
   bottom: 0;
   left: 50;
@@ -25,7 +25,7 @@
   right: 0px;
   height: 0;
   transition: 0.8s ease-out;
-  border-width: 0px 0px 300px 300px;
+  border-width: 0px 0px 275px 275px;
   overflow: hidden;
   border-color: transparent transparent #ffb845bb transparent;
 }
@@ -63,4 +63,79 @@
 .sports-span:hover .overlay1 {
   border-style: solid;
   overflow: visible;
+} */
+
+.fond {
+  position: absolute;
+  padding-top: 85px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  font-weight: 900;
+}
+
+.carreaux_presentation_light {
+  display: table-cell;
+  width: 290px;
+  height: 290px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.carreaux_presentation_light .shadow_swhow_mini {
+  background-color: rgba(19, 30, 33, 0.4);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.carreaux_presentation_light:hover .shadow_swhow_mini {
+  background-color: rgba(16, 23, 41, 0);
+}
+.carreaux_presentation_light .deroul_titre {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Comic Sans";
+  padding: 7px;
+  z-index: 1000;
+  top: 55%;
+  left: -80%;
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+  width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.carreaux_presentation_light:hover .deroul_titre {
+  background-color: #ecd659;
+  font-size: 20px;
+  left: 0px;
+}
+.carreaux_presentation_light .deroul_soustitre {
+  position: absolute;
+  font-family: "Comic Sans";
+  padding: 5px;
+  z-index: 1000;
+  top: 60%;
+  right: -85%;
+  margin-top: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 20px;
+  width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.carreaux_presentation_light:hover .deroul_soustitre {
+  background-color: #f0c73f;
+  right: 0px;
 }

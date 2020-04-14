@@ -1,5 +1,5 @@
 .headerNav {
-  color: #282c34 !important;
+  color: orange !important;
 }
 .collapse {
   float: right;
@@ -31,7 +31,10 @@ nav.black ul li a:hover {
 nav.black a {
   color: rebeccapurple;
 }
-nav.black .logo {
+.logo {
+  margin-top: 15px;
+  margin-left: 50px;
+  width: 150px;
 }
 @media only screen and (max-width: 800px) {
   nav {

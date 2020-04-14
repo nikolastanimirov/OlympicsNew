@@ -6,9 +6,8 @@
 .sign-up {
   margin-top: 50px;
 }
-.sign-up li {
-  display: inline-block;
-  padding: 15px;
+.sign-up h6 {
+  color: #fff;
 }
 .align-items-center {
   align-items: none !important;
@@ -17,5 +16,24 @@
 .about-page .col-6 {
   padding-right: 0px;
 }
-.about-us {
+
+.sports-redirect {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #1c2b5ac9;
+  color: black;
+  border-radius: 6em;
+}
+
+.sports-redirect:hover {
+  background-color: #fff;
+  color: #1c2b5ac9;
 }

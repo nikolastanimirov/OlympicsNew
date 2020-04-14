@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../static/HeaderNav.css";
 import $ from "jquery";
-import Logo from "../resources/Logo2019.png";
+import Logo from "../resources/icons/logo.png";
 import NavScroll from "../sources/NavScroll";
 
 class HeaderNav extends Component {

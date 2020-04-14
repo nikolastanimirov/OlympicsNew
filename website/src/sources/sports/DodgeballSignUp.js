@@ -18,7 +18,7 @@ class DodgeballSignUp extends Component {
         <div class="container-model">
           <button
             type="button"
-            class="btn btn-warning"
+            class="btn btn"
             data-toggle="modal"
             data-target="#myModal"
             onClick={shoot}
@@ -38,7 +38,7 @@ class DodgeballSignUp extends Component {
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-warning"
+                    class="btn btn-primary"
                     data-dismiss="modal"
                     onClick={shoot1}
                   >

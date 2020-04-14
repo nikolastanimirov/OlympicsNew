@@ -9,23 +9,22 @@ import Sign from "./Sign";
 
 class Home extends Component {
   state = {
-    renderedResponse: ''
-  }
+    renderedResponse: "",
+  };
 
-  getResponse = async() => {
-    const response = await fetch('/api/hello');
+  getResponse = async () => {
+    const response = await fetch("/api/hello");
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
 
     return body;
-  }
+  };
 
   componentDidMount() {
-    this.getResponse()
-      .then(res => {
-        const someData = res;
-        this.setState({ renderedResponse: someData });
-      })
+    this.getResponse().then((res) => {
+      const someData = res;
+      this.setState({ renderedResponse: someData });
+    });
   }
   render() {
     const { renderedResponse } = this.state;
@@ -42,7 +41,9 @@ class Home extends Component {
               <NavScroll className="nav-link" link="about" name="Events" />
             </button>
           </div>
+          <div class="image-overlay"></div>
         </div>
+
         <div className="para">
           <About />
         </div>

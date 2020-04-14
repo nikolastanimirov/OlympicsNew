@@ -3,6 +3,7 @@ import Countdown from "../countdown/Coutdown";
 import Headline from "../sources/Headline";
 import NavScroll from "../sources/NavScroll";
 import Main from "./Main";
+import flame from "../resources/icons/flame.png";
 import "../static/About.css";
 class About extends Component {
   render() {
@@ -16,24 +17,12 @@ class About extends Component {
                 <Countdown />
               </div>
               <div class="sign-up">
-                <li>
-                  <button class="btn btn-warning">
-                    <NavScroll
-                      className="nav-link"
-                      link="sign-up"
-                      name="Olympiad"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button class="btn btn-warning">
-                    <NavScroll
-                      className="nav-link"
-                      link="sports"
-                      name="Sports"
-                    />
-                  </button>
-                </li>
+                <h6>FOllow the fire:</h6>
+                <button className="sports-redirect">
+                  <NavScroll className="nav-link" link="sign-up" />
+                  <img src={flame} />
+                  <h5> Sign up</h5>
+                </button>
               </div>
             </div>
             <div class="col-6">

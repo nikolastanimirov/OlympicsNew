@@ -20,7 +20,6 @@
 .countdown-mainframe li {
   display: inline-block;
   margin-left: 5px;
-  background: rgb(40, 34, 108);
 }
 .block {
   width: 100px;
@@ -31,9 +30,36 @@
 .Clock-minutes,
 .Clock-seconds,
 .clock-title {
-  color: #ffffff;
+  color: #1c2b5ac9;
   font-family: Arial, Helvetica, sans-serif !important;
 }
 .clock-title {
   font-size: 16px;
+}
+.block1 {
+  border-radius: 0.4em;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(196, 196, 196);
+}
+
+.block2 {
+  border-radius: 0.4em;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(196, 196, 196);
+}
+
+.block3 {
+  border-radius: 0.4em;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(196, 196, 196);
+}
+
+.block4 {
+  border-radius: 0.4em;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(196, 196, 196);
 }

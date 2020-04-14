@@ -2,20 +2,21 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const db = require("./db/db");
+var cors = require("cors");
 const email = require("./config/email");
-const session = require("express-session");
-const User = require("./db/User");
+// const session = require("express-session");
+// const User = require("./db/User");
 const app = express();
 const port = process.env.PORT || 5000;
 
-const user = new User();
-app.use(
-  session({
-    secret: "secret",
-    resave: true,
-    saveUninitialized: true,
-  })
-);
+// const user = new User();
+// app.use(
+//   session({
+//     secret: "secret",
+//     resave: true,
+//     saveUninitialized: true,
+//   })
+// );
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -78,22 +79,22 @@ app.post("/api/dodgeball", (req, res) => {
   });
 });
 check = false;
-app.post("/api/login", function (request, response) {
-  user.login(request.body.username, request.body.password, function (result) {
-    if (result) {
-      console.log(response.status);
-    } else {
-      console.log("Error while logging in...");
-      check = false;
-      response.send("Username or Password are incorrect!");
-    }
-  });
-});
+// app.post("/api/login", function (request, response) {
+//   user.login(request.body.username, request.body.password, function (result) {
+//     if (result) {
+//       console.log(response.status);
+//     } else {
+//       console.log("Error while logging in...");
+//       check = false;
+//       response.send("Username or Password are incorrect!");
+//     }
+//   });
+// });
 
-app.get("/api/signup", function (request, response) {
-  console.log(check);
-  if (request.session.login) response.sendStatus(200);
-});
+// app.get("/api/signup", function (request, response) {
+//   console.log(check);
+//   if (request.session.login) response.sendStatus(200);
+// });
 
 //Get Sign Up People
 app.get("/api/dodgeball", (req, res) => {
@@ -108,4 +109,10 @@ app.get("/api/swimming", (req, res) => {
     res.send(result);
   });
 });
+
+app.use(cors());
+var Users = require("./routes/Users");
+
+app.use("/users", Users);
+
 app.listen(port, () => console.log(`Listening on port ${port}...`));

@@ -1,8 +1,11 @@
 import React from "react";
 import Sports from "./Sports";
-import Dodgeball from "../resources/sports/dodgeball.png";
-import Arm from "../resources/sports/arm.jpg";
-import Bowling from "../resources/sports/bowling.jpg";
+import SportsDisplay from "./SportsDisplay";
+import swimming from "../resources/sports/swimming.png";
+import basketball from "../resources/sports/basketball.png";
+import Footbal from "../resources/sports/Football.png";
+import volleyball from "../resources/sports/volleyball.png";
+import running from "../resources/sports/running.png";
 import Headline from "../sources/Headline";
 import "../static/SportsData.css";
 import DodgeballSignUp from "./sports/DodgeballSignUp";
@@ -13,38 +16,20 @@ function SportsData() {
       <Headline title="Sports" />
       <ul>
         <li>
-          <div class="sport-container">
-            <Sports img={Dodgeball} alt="Dodgeball" title="Dodgeball" />
-            <div class="sports-span">
-              <DodgeballSignUp />
-            </div>
-          </div>
+          <SportsDisplay img={swimming} text={"Swimming"} />
         </li>
         <li>
-          <Sports
-            img={Arm}
-            alt="Arm"
-            url="https://www.google.com"
-            title="Arm"
-          />
+          <SportsDisplay img={basketball} text={"Basketball"} />
         </li>
         <li>
-          <Sports
-            img={Bowling}
-            alt="Bowling"
-            url="https://www.google.com"
-            title="Bowling"
-          />
+          <SportsDisplay img={running} text={"Running"} />
         </li>
         <li>
-          <Sports
-            img={Bowling}
-            alt="Bowling"
-            url="https://www.google.com"
-            title="Bowling"
-          />
+          <SportsDisplay img={volleyball} text={"Volleyball"} />
         </li>
-        <li></li>
+        <li>
+          <SportsDisplay img={Footbal} text={"Football"} />
+        </li>
       </ul>
     </div>
   );
