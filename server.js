@@ -1,35 +1,24 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-const mysql = require("mysql");
-const config = require("./config/db");
+const db = require("./db/db");
 const email = require("./config/email");
 const session = require("express-session");
-
+const User = require("./db/User");
 const app = express();
 const port = process.env.PORT || 5000;
 
+const user = new User();
 app.use(
   session({
     secret: "secret",
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
   })
 );
 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-//Create connection
-const db = mysql.createConnection(config.mysql);
-
-//Connect
-db.connect(err => {
-  if (err) {
-    console.log(err);
-  }
-  console.log("Mysql is connected successfully...");
-});
+app.use(bodyParser.json());
 
 app.get("/api/hello", (req, res) => {
   res.send({ express: "hello" });
@@ -64,7 +53,7 @@ app.post("/api/form", (req, res) => {
       replyTo: "fastfiv8@gmail.com",
       subject: "New Message",
       text: req.body.message,
-      html: htmlEmail
+      html: htmlEmail,
     };
     transporter.sendMail(mailOptions, (err, info) => {
       if (err) {
@@ -77,7 +66,7 @@ app.post("/api/dodgeball", (req, res) => {
   let post = {
     FirstName: req.body.FirstName,
     LastName: req.body.LastName,
-    Email: req.body.Email
+    Email: req.body.Email,
   };
   let sql = "INSERT INTO dodgeball SET ?";
   let query = db.query(sql, post, (err, result) => {
@@ -88,33 +77,22 @@ app.post("/api/dodgeball", (req, res) => {
     res.send("item added");
   });
 });
+check = false;
+app.post("/api/login", function (request, response) {
+  user.login(request.body.username, request.body.password, function (result) {
+    if (result) {
+      console.log(response.status);
+    } else {
+      console.log("Error while logging in...");
+      check = false;
+      response.send("Username or Password are incorrect!");
+    }
+  });
+});
 
-app.post("/api/login", function(request, response) {
-  var username = request.body.username;
-  var password = request.body.password;
-  console.log(username);
-  console.log(password);
-  if (username && password) {
-    db.query(
-      "SELECT * FROM login WHERE username = ? AND password = ?",
-      [username, password],
-      function(error, results, fields) {
-        if (results.length > 0) {
-          request.session.loggedin = true;
-          request.session.username = username;
-
-          return response.redirect("/signup");
-        } else {
-          console.log(error);
-          response.send("Incorrect Username and/or Password!");
-        }
-        response.end();
-      }
-    );
-  } else {
-    response.send("Please enter Username and Password!");
-    response.end();
-  }
+app.get("/api/signup", function (request, response) {
+  console.log(check);
+  if (request.session.login) response.sendStatus(200);
 });
 
 //Get Sign Up People
