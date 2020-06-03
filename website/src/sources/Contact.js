@@ -5,6 +5,11 @@ import LocationIcon from "../resources/icons/location.png";
 import PhoneIcon from "../resources/icons/phone.png";
 import Headline from "../sources/Headline";
 import axios from "axios";
+
+function refreshPage() {
+  window.alert("Your email was sent!");
+  window.location.reload();
+}
 class Contact extends Component {
   constructor() {
     super();
@@ -12,12 +17,12 @@ class Contact extends Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSumit = this.handleSumit.bind(this);
   }
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
   async handleSumit(e) {
@@ -27,9 +32,10 @@ class Contact extends Component {
     const form = await axios.post("/api/form", {
       name,
       email,
-      message
+      message,
     });
   }
+
   render() {
     return (
       <div id="contact-us" className="contact-container">
@@ -41,7 +47,7 @@ class Contact extends Component {
           <div class="row">
             <div class="col-sm">
               <div class="number">
-                <img src={PhoneIcon} alt="phone"/>
+                <img src={PhoneIcon} alt="phone" />
                 <h4>64564545645</h4>
               </div>
             </div>
@@ -53,7 +59,7 @@ class Contact extends Component {
             </div>
             <div class="col-sm">
               <div class="number">
-                <img src={LocationIcon} alt="location"/>
+                <img src={LocationIcon} alt="location" />
                 <h4>
                   {" "}
                   ул. „Свобода Бъчварова“ 6, 2700 Южна промишлена зона,
@@ -104,7 +110,7 @@ class Contact extends Component {
             </div>
           </div>
           <div class="form-row">
-            <button type="submit" class="btn btn-warning">
+            <button type="submit" class="btn btn-warning" onClick={refreshPage}>
               Send
             </button>
           </div>

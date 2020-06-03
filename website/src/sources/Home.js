@@ -3,9 +3,12 @@ import "../static/Home.css";
 import About from "../sources/About";
 import Sponsors from "../sources/SponsorsData";
 import SportsData from "../sources/SportsData";
-import NavScroll from "../sources/NavScroll";
 import Crew from "../sources/Crew";
 import Sign from "./Sign";
+import styled, { keyframes } from "styled-components";
+import { bounce } from "react-animations";
+
+const Bounce = styled.div`animation 3s ${keyframes`${bounce}`} infinite`;
 
 class Home extends Component {
   state = {
@@ -31,26 +34,24 @@ class Home extends Component {
     return (
       <div id="home" className="homeBody">
         <div className="para">
-          <div className="first">
-            <h2>AUBG Olympics</h2>
-            <hr size="2px" width="75%" />
-            <h3>Checkout the events we organize</h3>
-            <p>{renderedResponse.express}</p>
-            {"\n"}
-            <button class="btn btn-warning">
-              <NavScroll className="nav-link" link="about" name="Events" />
-            </button>
+          <div class="hero">
+            <Bounce>
+              <h1>AUBG OLYMPICS</h1>
+            </Bounce>
           </div>
           <div class="image-overlay"></div>
         </div>
-
         <div className="para">
           <About />
         </div>
         <div className="para">
-          <h2>
-            <Sign />
-          </h2>
+          <div className="challenges">
+            <h1>This week's special</h1>
+            <p>&#128293;What: DOOGEBALL CHALLENGE</p>
+            <p>&#128293;When: WEDNESDAY 7:30PM</p>
+            <p>&#128293;Where: AUBG SPORTS HALL</p>
+            {/* <Sign /> */}
+          </div>
         </div>
         <div className="para">
           <SportsData />

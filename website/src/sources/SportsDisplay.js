@@ -1,15 +1,25 @@
 import React from "react";
-import Sports from "./Sports";
-import swimming from "../resources/sports/swimming.png";
-import basketball from "../resources/sports/basketball.png";
-import Footbal from "../resources/sports/Football.png";
-import volleyball from "../resources/sports/volleyball.png";
-import running from "../resources/sports/running.png";
-import Headline from "../sources/Headline";
 import "../static/SportsData.css";
-import DodgeballSignUp from "./sports/DodgeballSignUp";
+import DodgeballSignUp from "./sports/Dodgeball/DodgeballSignUp";
 
 function SportsData(props) {
+  function shoot() {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  }
   return (
     <li>
       <div
@@ -22,6 +32,14 @@ function SportsData(props) {
           <div class="deroul_titre">{props.text}</div>
           <div class="deroul_soustitre">
             {" "}
+            <button onClick={shoot} id="myBtn" className="btn">
+              <h5>Sign up</h5>
+            </button>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
             <DodgeballSignUp />
           </div>
         </div>

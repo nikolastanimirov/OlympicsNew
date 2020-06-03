@@ -6,7 +6,7 @@ import NavScroll from "../sources/NavScroll";
 
 class HeaderNav extends Component {
   render() {
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       if ($(document).scrollTop()) {
         $("nav").addClass("black");
       } else {
@@ -36,7 +36,7 @@ class HeaderNav extends Component {
                 <NavScroll className="nav-link" link="home" name="Home" />
               </li>
               <li className="nav-item">
-                <NavScroll className="nav-link" link="about" name="About" />
+                <NavScroll className="nav-link" link="about" name="DDAY" />
               </li>
               <li className="nav-item">
                 <NavScroll className="nav-link" link="sports" name="Sport" />
@@ -59,7 +59,7 @@ class HeaderNav extends Component {
                 />
               </li>
               <li className="nav-item">
-                <NavScroll className="nav-link" link="sign-up" name="Sign-up" />
+                <NavScroll className="nav-link" link="sign-up" name="Special" />
               </li>
             </ul>
           </div>

@@ -14,57 +14,14 @@
   width: 92%;
   margin: 0 auto;
 }
-.container1 {
-  position: relative;
-}
-/* .overlay1 {
-  position: absolute;
-  bottom: 0;
-  left: 50;
-  top: 0px;
-  right: 0px;
-  height: 0;
-  transition: 0.8s ease-out;
-  border-width: 0px 0px 275px 275px;
-  overflow: hidden;
-  border-color: transparent transparent #ffb845bb transparent;
-}
-
-.container1:hover .overlay1 {
-  border-style: solid;
-  overflow: visible;
-}
-
-.text1 {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  visibility: hidden;
-  text-align: center;
-}
-.container1:hover .text1 {
-  visibility: visible;
-  top: 180px;
-  right: -380px;
-  left: 0;
-}
-.modal-content {
-  top: 200px;
-}
-.sports-span {
-  position: absolute;
-  text-align: center;
-  margin-top: -60px;
-  overflow: hidden;
-  margin-left: 150px;
-  opacity: 1;
-}
 
 .sports-span:hover .overlay1 {
   border-style: solid;
   overflow: visible;
-} */
-
+}
+.modal-content {
+  top: 200px;
+}
 .fond {
   position: absolute;
   padding-top: 85px;
@@ -138,4 +95,42 @@
 .carreaux_presentation_light:hover .deroul_soustitre {
   background-color: #f0c73f;
   right: 0px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

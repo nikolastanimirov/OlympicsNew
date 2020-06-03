@@ -11,7 +11,7 @@ function Sport(props) {
           to={props.link}
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={-70}
           duration={500}
         >
           {" "}

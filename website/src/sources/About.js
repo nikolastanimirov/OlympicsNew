@@ -10,19 +10,27 @@ class About extends Component {
     return (
       <div id="about" class="about-page">
         <div class="container">
-          <Headline title="About" />
+          <Headline title="AUBG Olympics Olympiad" />
           <div class="row">
             <div class="col-6">
               <div class="count">
                 <Countdown />
               </div>
               <div class="sign-up">
-                <h6>FOllow the fire:</h6>
-                <button className="sports-redirect">
-                  <NavScroll className="nav-link" link="sign-up" />
-                  <img src={flame} />
-                  <h5> Sign up</h5>
-                </button>
+                <div className="sports-redirect">
+                  <img src={flame} alt="flame" />
+                  <h6>
+                    Follow the fire:{" "}
+                    <p>
+                      {" "}
+                      <NavScroll
+                        className="nav-link"
+                        link="sports"
+                        name="here"
+                      />
+                    </p>
+                  </h6>
+                </div>
               </div>
             </div>
             <div class="col-6">

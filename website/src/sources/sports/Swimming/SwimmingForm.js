@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class Dodgeball extends Component {
+class SwimmingForm extends Component {
   constructor() {
     super();
 
@@ -20,7 +20,7 @@ class Dodgeball extends Component {
     e.preventDefault();
 
     const { FirstName, LastName, Email } = this.state;
-    const form = await axios.post("/api/dodgeball", {
+    const form = await axios.post("/api/swimming", {
       FirstName,
       LastName,
       Email,
@@ -29,7 +29,6 @@ class Dodgeball extends Component {
   render() {
     return (
       <div>
-        {" "}
         <form onSubmit={this.handleSumit}>
           <div class="form-group">
             <label for="FirstName">First Name</label>
@@ -40,6 +39,7 @@ class Dodgeball extends Component {
               placeholder="FirstName"
               name="FirstName"
               onChange={this.handleChange}
+              required
             />
           </div>
           <div class="form-group">
@@ -51,6 +51,7 @@ class Dodgeball extends Component {
               placeholder="LastName"
               name="LastName"
               onChange={this.handleChange}
+              required
             />
           </div>
           <div class="form-group">
@@ -63,12 +64,13 @@ class Dodgeball extends Component {
               placeholder="Enter email"
               name="Email"
               onChange={this.handleChange}
+              required
             />
             <small id="emailHelp" class="form-text text-muted">
               We'll never share your email with anyone else.
             </small>
           </div>
-          <button type="submit" class="btn btn-success">
+          <button type="submit" class="btn btn-warning">
             Submit
           </button>
         </form>{" "}
@@ -77,4 +79,4 @@ class Dodgeball extends Component {
   }
 }
 
-export default Dodgeball;
+export default SwimmingForm;

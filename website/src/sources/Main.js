@@ -1,5 +1,4 @@
 import React from "react";
-import Dodgeball from "../resources/sports/dodgeball.png";
 import slide_image_1 from "../resources/slider/1.png";
 import slide_image_2 from "../resources/slider/2.png";
 import slide_image_3 from "../resources/slider/3.png";

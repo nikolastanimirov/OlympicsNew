@@ -8,7 +8,7 @@
   align-content: center;
   justify-content: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   text-align: left;
@@ -56,7 +56,6 @@ hr {
   background-color: #fff;
 }
 .para {
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,8 +64,32 @@ hr {
 .image-overlay {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: absolute;
   top: 0px;
   left: 0px;
+}
+h1 {
+  text-shadow: 10px 10px 0 rgb(251, 140, 65);
+  font-size: 100px;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.challenges {
+  width: 75%;
+  max-height: 50%;
+  margin: 200px auto;
+  background: rgba(255, 255, 255, 0.408);
+}
+.challenges p {
+  padding-left: 35px;
+  font-size: 35px;
 }

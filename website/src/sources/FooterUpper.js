@@ -16,8 +16,12 @@ class FooterUpper extends Component {
             </div>
             <div class="w-100"></div>
             <div class="col">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Established: 15 years ago.. Today, the club organizes the only
+              all-university sports event, which includes 15 disciplines, played
+              in a competitive atmosphere. The event opens with an on-campus
+              celebration that involves the whole AUBG community and displays
+              various talents and spectacle to recreate the university spirit
+              and to raise attention for the upcoming local Olympiad
             </div>
             <div class="col">
               <div class="number">
